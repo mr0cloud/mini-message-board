@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(18, 63, 63);
+    min-height: 100vh;
+
+    color: white;
+}
+
+header {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    margin-bottom: 20px;
+    padding: 10px;
+
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.411);
+
+}
+
+#MsgFormBtn {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px;
+
+    background-color: rgb(24, 82, 63);
+    border-radius: 10px;
+}
+
+#MsgFormBtn:hover {
+    opacity: 0.7;
+}
+
+.msg-container {
+    width: 50%;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+    padding: 15px;
+
+    background-color: rgb(28, 77, 48);
+
+    border-left: 4px solid yellowgreen;
+    border-radius: 10px;
+
+    box-shadow: -16px 10px 25px 0px rgba(0,0,0,0.75);
+}
+
+.msg-container:hover{
+    opacity: 0.8;
+}
+
+.msg-info{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:flex-start;
+gap: 20px;
+}
+.msg-info h3,
+.msg-info p {
+    margin: 0;
+}
+
+.msg-info h3{
+    font-size: 27px;
+}
+
+.msg-info p{
+    font-size: 18px;
+}
+
+#msgBtn{
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px;
+
+    background-color: rgb(24, 82, 63);
+    border-radius: 10px;
+}
+#msgBtn:hover{
+    opacity: 0.5;
+
+}
+
+form{
+    width: 60%;
+    height: 500px ;
+
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    
+
+
+}
+
+form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+form input,textarea{
+    align-self: stretch;
+
+    background-color: rgba(27, 95, 95, 0.796);
+    border: 2px solid rgba(255, 255, 255, 0.625);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-size: 15px;
+    color: white;
+}
+ 
+
+
+form button{
+    align-self: center;
+
+    color: white;
+
+    padding: 10px;
+
+    background-color: rgb(24, 82, 63);
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+}
+form button:hover{
+    opacity: 0.7;
+}
+
+#backBtn{
+    text-decoration: none;
+
+    color: white;
+
+    padding: 10px;
+
+    background-color: rgb(24, 82, 63);
+    border-radius: 10px;
+}
+
+#backBtn:hover{
+    opacity: 0.7;
+}
+main{
+    border: 1px solid blue;
+    width: 60%;
+    height: 500px;
+
+    padding: 15px;
+
+    box-shadow: -16px 10px 25px 0px rgba(0,0,0,0.75);
+
+    border: 2px solid rgba(255, 255, 255, 0.625);
+    border-radius: 10px;
+}
+.msg-head{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 10px;
+}
+
+#msg-text{
+    font-size: 20px;
+
+    align-self: flex-start;
+}

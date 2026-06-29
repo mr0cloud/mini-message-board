@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mini Message Board </h1>
+
+        <a href="/new" id="MsgFormBtn">Add new message</a>
+    </header>
+
+    <% for( let i=0; i < messages.length; i++) { %>
+        <div class="msg-container">
+            <div class="msg-info">
+               <h3> <%= messages[i].user %></h3>
+                <p><%= messages[i].text %></p>
+                       <p><%= messages[i].added.toLocaleDateString("en-US", {
+                             month: "long" , day: "numeric" ,
+                            year: "numeric" 
+                        }) %>
+                        </p> 
+            </div>
+
+            <div class="msg-action">
+                <a href="/message/<%= i %>" id="msgBtn">view details</a>
+            </div>
+        </div>
+        <% } %>
+
+
+</body>
+
+</html>
